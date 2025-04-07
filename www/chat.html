@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat - Private Chat</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-gray-100">
+  <div class="max-w-md mx-auto bg-white min-h-screen flex flex-col">
+    <!-- Chat Header -->
+    <header class="bg-blue-600 text-white p-4 sticky top-0 z-10">
+      <div class="flex items-center">
+        <button class="mr-4">
+          <i class="fas fa-arrow-left"></i>
+        </button>
+        <div class="flex items-center">
+          <img src="https://randomuser.me/api/portraits/women/44.jpg" 
+               class="w-8 h-8 rounded-full object-cover mr-2">
+          <div>
+            <h1 class="font-semibold">Sarah Johnson</h1>
+            <p class="text-xs">Online</p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Messages Container -->
+    <div class="flex-1 p-4 overflow-y-auto space-y-4">
+      <!-- Incoming Message -->
+      <div class="flex items-start">
+        <img src="https://randomuser.me/api/portraits/women/44.jpg" 
+             class="w-8 h-8 rounded-full object-cover mr-2">
+        <div class="bg-gray-200 rounded-lg p-3 max-w-xs">
+          <p>Hey there! How are you?</p>
+          <p class="text-xs text-gray-500 text-right mt-1">10:30 AM</p>
+        </div>
+      </div>
+
+      <!-- Outgoing Message -->
+      <div class="flex justify-end">
+        <div class="bg-blue-500 text-white rounded-lg p-3 max-w-xs">
+          <p>I'm doing great! Just working on our project.</p>
+          <p class="text-xs text-blue-100 text-right mt-1">10:32 AM</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Message Input -->
+    <div class="p-3 border-t border-gray-200 bg-white sticky bottom-0">
+      <div class="flex items-center">
+        <button class="text-gray-500 mx-2">
+          <i class="fas fa-smile"></i>
+        </button>
+        <button class="text-gray-500 mx-2">
+          <i class="fas fa-paperclip"></i>
+        </button>
+        <input type="text" placeholder="Type a message..." 
+               class="flex-1 border border-gray-300 rounded-full py-2 px-4 focus:outline-none focus:border-blue-500">
+        <button class="bg-blue-600 text-white rounded-full w-10 h-10 flex items-center justify-center ml-2">
+          <i class="fas fa-paper-plane"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
