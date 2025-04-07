@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chats - Private Chat</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-gray-100">
+  <div class="max-w-md mx-auto bg-white min-h-screen">
+    <!-- Header -->
+    <header class="bg-blue-600 text-white p-4 sticky top-0 z-10">
+      <div class="flex justify-between items-center">
+        <h1 class="text-xl font-bold">Messages</h1>
+        <button class="text-white">
+          <i class="fas fa-search"></i>
+        </button>
+      </div>
+    </header>
+
+    <!-- Chat List -->
+    <div class="divide-y divide-gray-200">
+      <!-- Chat Item 1 -->
+      <div class="p-4 flex items-center hover:bg-gray-50 cursor-pointer">
+        <div class="relative">
+          <img src="https://randomuser.me/api/portraits/women/44.jpg" 
+               class="w-12 h-12 rounded-full object-cover">
+          <span class="absolute bottom-0 right-0 w-3 h-3 bg-green-500 rounded-full border-2 border-white"></span>
+        </div>
+        <div class="ml-4 flex-1">
+          <div class="flex justify-between">
+            <h2 class="font-semibold">Sarah Johnson</h2>
+            <span class="text-xs text-gray-500">2 min ago</span>
+          </div>
+          <p class="text-sm text-gray-500 truncate">Hey, how are you doing?</p>
+        </div>
+      </div>
+
+      <!-- Chat Item 2 -->
+      <div class="p-4 flex items-center hover:bg-gray-50 cursor-pointer">
+        <div class="relative">
+          <img src="https://randomuser.me/api/portraits/men/32.jpg" 
+               class="w-12 h-12 rounded-full object-cover">
+        </div>
+        <div class="ml-4 flex-1">
+          <div class="flex justify-between">
+            <h2 class="font-semibold">Michael Chen</h2>
+            <span class="text-xs text-gray-500">1 hr ago</span>
+          </div>
+          <p class="text-sm text-gray-500 truncate">Let's meet tomorrow</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- New Chat Button -->
+    <div class="fixed bottom-20 right-4">
+      <button class="bg-blue-600 text-white w-14 h-14 rounded-full shadow-lg flex items-center justify-center">
+        <i class="fas fa-pen text-xl"></i>
+      </button>
+    </div>
+  </div>
+</body>
+</html>
