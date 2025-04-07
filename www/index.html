@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Private Text App</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-gray-100 min-h-screen">
+  <div id="app" class="container mx-auto p-4 max-w-md">
+    <!-- Router will inject content here -->
+  </div>
+
+  <!-- Include all necessary scripts -->
+  <script src="router.js"></script>
+  <script src="app.js"></script>
+  
+  <script>
+    // Initialize socket connection
+    const socket = io();
+    
+    // Make socket available globally for chat functionality
+    window.socket = socket;
+  </script>
+</body>
+</html>
